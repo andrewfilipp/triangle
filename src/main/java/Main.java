@@ -7,7 +7,7 @@ public class Main {
 
 
         // hundred triangles
-        int i=10;
+        int i=100;
         Triangle[] trianglesArray= new Triangle[i];
 
         Triangle triangle=new Triangle(new Point(0,0), new Point(0,5), new Point(3,0));
