@@ -10,14 +10,6 @@ public class Main {
         int i=100;
         Triangle[] trianglesArray= new Triangle[i];
 
-        Triangle triangle=new Triangle(new Point(0,0), new Point(0,5), new Point(3,0));
-        System.out.println(triangle.pointA.calculateDistance(triangle.pointB)+" - AB");
-        System.out.println(triangle.pointA.calculateDistance(triangle.pointC)+" - AC");
-        System.out.println(triangle.pointB.calculateDistance(triangle.pointC)+" - BC");
-
-        System.out.println(triangle.calculatePerimeter() + " - perimeter");
-        System.out.println(triangle.calculateSquare() + " - square");
-        System.out.println(triangle.triangleType() + " - type");
 
         for (i=0; i<trianglesArray.length; i++){
 
