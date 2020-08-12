@@ -20,8 +20,8 @@ public class Triangle {
 
    public double calculateSquare(){
        //by "Heron's formula"
-       double halfSquare = (pointA.calculateDistance(pointB) + pointB.calculateDistance(pointC) + pointC.calculateDistance(pointA))/2;
-       double square = Math.sqrt(halfSquare*(halfSquare - pointA.calculateDistance(pointB)) * pointB.calculateDistance(pointC) * pointC.calculateDistance(pointA));
+       double halfPerimeter = (pointA.calculateDistance(pointB) + pointB.calculateDistance(pointC) + pointC.calculateDistance(pointA))/2;
+       double square = Math.sqrt(halfPerimeter*(halfPerimeter - pointA.calculateDistance(pointB)) * (halfPerimeter - pointB.calculateDistance(pointC)) * (halfPerimeter - pointC.calculateDistance(pointA)));
        return square;
    }
 
